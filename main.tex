@@ -1,0 +1,92 @@
+%% Copyright (C) 2018 Adrien Blanchet
+%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           Fichier maitre				%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, 11pt, twoside,openright]{report}
+\input{include/preambule}
+\usepackage{pdfpages}
+\input{include/custom_commands}
+\input{include/page_de_garde}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Méta-données du PDF
+\hypersetup{
+    pdfauthor={Adrien Blanchet},
+    pdfsubject={Manuscrit de thèse de doctorat},
+    pdftitle={Recherche du neutrino stérile auprès du réacteur de l'ILL : Expérience Stereo.},
+    pdfkeywords={neutrino, sterile, stereo, ILL}
+}
+
+\renewcommand{\textcurrency}{$x$} % debug
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document
+\begin{document}
+
+\pagenumbering{gobble}
+
+\includepdf[pages=-]{ED_covers/1ere.pdf}
+
+%\pagedegarde
+
+%\cleardoublepage
+\clearpage
+\clearpage
+
+\pagenumbering{roman}
+\includefrom{Remerciements/}{include/remerciements}
+
+% Table des matières
+\setcounter{tocdepth}{1} % Pas besoin de trop détailler le sommaire ici
+\dominitoc               % Génération des mini-toc	
+\tableofcontents
+
+% Liste des figures
+\renewcommand*\listfigurename{Liste des figures}
+\listoffigures
+
+% Liste des tableaux
+\listoftables
+
+\setcounter{mtc}{3}	% "Corrige" les minitoc décallés à cause des chapter*
+\pagenumbering{arabic}
+
+\includefrom{Introduction/}{include/introduction}
+
+\adjustmtc % fix \minitoc shift
+\includefrom{Chapitre1/}{include/chapitre_motivations}
+\includefrom{Chapitre2/}{include/chapitre_stereo}
+\includefrom{Chapitre3/}{include/chapitre_simulations}
+\includefrom{Chapitre4/}{include/chapitre_energie}
+\includefrom{Chapitre5/}{include/chapitre_analyse}
+\includefrom{Chapitre6/}{include/chapitre_stat}
+\includefrom{Chapitre7/}{include/chapitre_results}
+\includefrom{Conclusion/}{include/conclusion}
+%\includefrom{Epilogue/}{include/epilogue}
+
+\printbibliography
+
+%\begin{appendix}
+
+%\pagenumbering{Roman}
+
+%\includefrom{Annexes/}{include/annexes}
+
+%\printglossary[type=\acronymtype , title={Liste des acronymes}, toctitle={Liste des acronymes}]
+%\printglossary[title=Glossaire,toctitle=Glossaire]
+%\printglossary[type=notation,title={Liste des symboles}, toctitle={Liste des symboles}]
+    
+%\end{appendix}
+
+% \subfile{4eme.tex}
+
+\cleardoublepage
+
+\includepdf[pages=-]{ED_covers/4eme.pdf}
+
+\end{document}
+

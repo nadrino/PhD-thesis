@@ -1,0 +1,185 @@
+%% Copyright (C) 2018 Adrien Blanchet
+%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           Page de Garde                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Jury
+%%% Jury member n1 (Président) %%%
+\newcommand{\jurynameA}{Xxxxx XXXXXXXX}
+\newcommand{\jurygenderA}{Mme.} % M. or Mme. / Mrs.
+\newcommand{\juryadressA}{\'Etablissement d'exercice}
+\newcommand{\jurygradeA}{Fonction}
+\newcommand{\juryroleA}{Président(e) du jury} %
+%%% Jury member n2 (Rapporteur) %%%
+\newcommand{\jurynameB}{Xxxxx XXXXXXXX}
+\newcommand{\jurygenderB}{M.} % M. or Mme. / Mrs.
+\newcommand{\juryadressB}{\'Etablissement d'exercice}
+\newcommand{\jurygradeB}{Fonction}
+\newcommand{\juryroleB}{Rapporteur}
+%%% Jury member n3 (Rapporteur) %%%
+\newcommand{\jurynameC}{Xxxxx XXXXXXXX}
+\newcommand{\jurygenderC}{M.} % M. or Mme. / Mrs.
+\newcommand{\juryadressC}{\'Etablissement d'exercice}
+\newcommand{\jurygradeC}{Fonction}
+\newcommand{\juryroleC}{Rapporteur}
+%%% Jury member n4 (Examinateur) %%%
+\newcommand{\jurynameD}{Xxxxx XXXXXXXX}
+\newcommand{\jurygenderD}{Mme} % M. or Mme. / Mrs.
+\newcommand{\juryadressD}{\'Etablissement d'exercice}
+\newcommand{\jurygradeD}{Fonction}
+\newcommand{\juryroleD}{Examinateur/rice}
+%%% Jury member n5 (Examinateur) %%%
+\newcommand{\jurynameE}{Xxxxx XXXXXXXX}
+\newcommand{\jurygenderE}{M.} % M. or Mme. / Mrs.
+\newcommand{\juryadressE}{\'Etablissement d'exercice}
+\newcommand{\jurygradeE}{Fonction}
+\newcommand{\juryroleE}{Examinateur/rice}
+%%% Jury member n6 (Directeur de thèse) %%%
+\newcommand{\jurynameF}{David Lhuillier}
+\newcommand{\jurygenderF}{M.} % M. or Mme. / Mrs.
+\newcommand{\juryadressF}{LEARN/DPhN/Irfu/CEA-Saclay}
+\newcommand{\jurygradeF}{Ingénieur-Chercheur}
+\newcommand{\juryroleF}{Directeur de thèse}
+
+
+\newcommand\BackgroundPic{%
+    \put(0,0){%
+        \parbox[b][\paperheight]{\paperwidth}{%
+            \includegraphics[height=0.45\paperheight]{Bordure.png}%
+            \vfill
+        }
+    }
+}
+
+\newcommand\EtiquetteThese{%
+    \put(0,0){%
+        \parbox[t][\paperheight]{\paperwidth}{%
+            \hfill
+            \colorbox{blue}{
+                \begin{minipage}[b]{3em}
+                    \centering\Huge\textcolor{white}{T\\H\\E\\S\\E\\}
+                    \vspace{0.2cm}
+                \end{minipage}
+            }
+        }
+    }
+}
+
+
+\newcommand{\pagedegarde}{
+
+\newgeometry{top=2cm, bottom=1cm, left=2cm, right=1cm}
+\AddToShipoutPicture*{\BackgroundPic}
+%\AddToShipoutPicture*{\EtiquetteThese}
+
+\begin{titlepage}
+
+\centering
+
+\includegraphics[height=0.12\textwidth]{images/PHENIICS.png}
+\hfill
+\includegraphics[height=0.12\textwidth]{images/logo_irfu_bleu.png}\\
+
+\vspace{1cm}
+
+\begin{mdframed}
+
+\begin{minipage}[t][22cm][t]{\textwidth}
+
+\begin{flushleft}
+\large\textbf{NNT : 2016SACLX042}
+\end{flushleft}
+
+\begin{center}
+
+\color{blue!20!red!45!black}
+{\LARGE\MakeUppercase{Thèse de doctorat}}
+\vspace{8pt}
+
+{\LARGE\MakeUppercase{de}}
+\vspace{8pt}
+
+{\LARGE\MakeUppercase{l'Université Paris-Saclay}}
+\vspace{8pt}
+
+{\LARGE\MakeUppercase{préparée au}}
+\vspace{8pt}
+
+{\LARGE\MakeUppercase{CEA Saclay}}
+\vspace{36pt}
+
+\color{black}
+{\Large\MakeUppercase{\'Ecole Doctorale N°576}}
+\vspace{5pt}
+
+{\Large\textsc{Particules, Hadrons, \'Energie et Noyau : Instrumentation, Imagerie, Cosmos et Simulation (PHENIICS)}}
+\vspace{16pt}
+
+{\Large Spécialité de doctorat : Physique des Particules}
+\vspace{12pt}
+
+{\large Par}
+\vspace{12pt}
+
+{\LARGE\textbf{Monsieur Adrien BLANCHET}}
+\vspace{28pt}
+
+{\LARGE\bfseries 
+Recherche du neutrino stérile auprès du réacteur de l'ILL : \\ 
+\vspace{0.2cm}
+Expérience Stereo.}
+
+\end{center}
+
+\vfill
+\begin{flushleft}
+
+\large
+\textbf{Thèse présentée et soutenue à XXXXXXX, le XX XXXXXXX 2019}
+\vspace{15pt}
+
+\textbf{Composition du Jury :}
+\vspace{8pt}
+
+\end{flushleft}
+
+\begin{center}
+\begin{tabular}{llll}
+
+    \jurygenderA & \textsc{\jurynameA}  & \jurygradeA & (\juryroleA) \\
+    \null & \null & \juryadressA &\\   
+   
+    \jurygenderB & \textsc{\jurynameB}  & \jurygradeB & (\juryroleB) \\
+    \null & \null & \juryadressB &\\ 
+    
+    \jurygenderC & \textsc{\jurynameC}  & \jurygradeC & (\juryroleC) \\
+    \null & \null & \juryadressC &\\ 
+    
+    \jurygenderD & \textsc{\jurynameD}  & \jurygradeD & (\juryroleD) \\
+    \null & \null & \juryadressD &\\ 
+    
+    \jurygenderE & \textsc{\jurynameE}  & \jurygradeE & (\juryroleE) \\
+    \null & \null & \juryadressE &\\ 
+    
+    \jurygenderF & \textsc{\jurynameF}  & \jurygradeF & (\juryroleF) \\
+    \null & \null & \juryadressF &\\ 
+   
+  \end{tabular}    
+\end{center}
+
+\end{minipage}
+
+\end{mdframed}
+
+
+
+\end{titlepage}
+
+\restoregeometry
+
+
+}
+\makeatother
