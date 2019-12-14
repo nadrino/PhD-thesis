@@ -1,0 +1,126 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Modèle pour la 4ème de couverture des thèses préparées à l'Université Paris-Saclay, basé sur le modèle produit par Nikolas STOTT / Template for back cover of thesis made at Université Paris-Saclay, based on the template made by Nikolas STOTT
+%%% Mis à jour par Aurélien ARNOUX (École polytechnique)/ Updated by Aurélien ARNOUX (École polytechnique)
+%%% Les instructions concernant chaque donnée à remplir sont données en bloc de commentaire / Rules to fill this file are given in comment blocks
+%%% ATTENTION Ces informations doivent tenir sur une seule page une fois compilées / WARNING These informations must contain in no more than one page once compiled
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Version du 19 juillet 2018 (Merci à Hadrien VROYLANDT (Univ. Paris-Sud) pour ses suggestions et corrections)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\usepackage{siunitx}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{geometry}
+\geometry{
+left=16mm,
+top=30mm,
+right=16mm,
+bottom=30mm
+}
+\usepackage{xcolor}
+\definecolor{bordeau}{rgb}{0.3515625,0,0.234375}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{multicol}
+\setlength{\columnseprule}{0pt}
+\setlength\columnsep{10pt}
+
+\usepackage[french]{babel}
+
+\label{form}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Formulaire / Form
+%%% Remplacer les paramètres des \newcommand par les informations demandées / Replace \newcommand parameters by asked informations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\logoEd}{ed}																		%% Logo de l'école doctorale. Indiquer le sigle / Doctoral school logo. Indicate the acronym : 2MIB; AAIF; ABIES; BIOSIGNE; CBMS; EDMH; EDOM; EDPIF; EDSP; EOBE; INTERFACES; ITFA; PHENIICS; SDSV; SDV; SHS; SMEMAG; SSMMH; STIC
+\newcommand{\PhDTitleFR}{Recherche du neutrino stérile auprès du réacteur de l'ILL : expérience Stereo.}													%% Titre de la thèse en français / Thesis title in french
+\newcommand{\keywordsFR}{neutrino, stérile, réacteur, oscillation, non-prolifération}														%% Mots clés en français, séprarés par des , / Keywords in french, separated by ,
+\newcommand{\abstractFR}{La thèse de doctorat porte sur la physique des neutrinos de réacteurs. L'étude de plus en plus précise des spectres d'antineutrinos des réacteurs a mis à jour une déviation entre la prédiction et les mesures qui pourrait indiquer l'existence d'un nouveau neutrino, non couplé avec l'interaction faible (un neutrino stérile) et de masse autour de $\SI{1}{eV/c^2}$. L'expérience \textsc{Stereo} vise à tester l'hypothèse du neutrino stérile auprès du réacteur ILL de Grenoble. Le principe de \textsc{Stereo} repose sur 6 cellules de détection identiques disposées entre 9 et 11.5 m de distance du cœur du réacteur de recherche de l'ILL. Le détecteur a commencé la prise de données en novembre 2016, et les premiers résultats ont été publiés dès 2018. Le travail effectué pendant la thèse a consisté dans un premier temps à caractériser la réponse en énergie du détecteur. Pendant la première phase de prise de données, des défaillances matérielles se sont manifestées entrainant le découplage optique d'une cellule et une augmentation progressive des fuites de lumière entre cellules. Ces deux aspects ont contraint l'analyse de données à développer un algorithme de reconstruction des dépôts d'énergie qui corrige les fuites lumières au premier ordre. Un important travail sur la mesure des paramètres de cette méthode a été entrepris afin d'assurer que l'échelle en énergie soit bien reproduite dans la simulation \textsc{Geant4}. L'estimation des incertitudes systématiques sur l'échelle en énergie a été effectuée en se servant des bruits de fond cosmogéniques. Le second aspect majeur abordé pendant la thèse est l'analyse statistique et la génération des contours d'exclusion de l'hypothèse du neutrino stérile. La déduction statistique a été conduite en s'inspirant de la méthode de Feldman et Cousins (1999) sur la génération d'intervalles de confiance fréquentistes. Un formalise en $\chi^2$ a spécialement été développé pour mener une analyse d'oscillations indépendante des prédictions de flux et de forme des spectres antineutrinos. Les erreurs statistiques et systématiques ont été propagées à l'aide de matrices de covariance et les lois de $\chi^2$ ont été calculées en générant des pseudo-expériences. L'ensemble des travaux menés pendant cette thèse de doctorat a contribué à la publication de trois papiers présentant les résultats de l'expérience \textsc{Stereo}.}															%% Résumé en français / abstract in french
+
+\newcommand{\PhDTitleEN}{Sterile neutrino search at short distance from the ILL research reactor : the Stereo experiment.}													%% Titre de la thèse en anglais / Thesis title in english
+\newcommand{\keywordsEN}{neutrino, reactor, sterile, oscillation, non-proliferation}														%% Mots clés en anglais, séprarés par des , / Keywords in english, separated by ,
+\newcommand{\abstractEN}{The doctoral thesis focuses on the physics of reactor neutrinos. The increasingly precise study of antineutrinos spectra from reactors has revealed a deviation between the prediction and the measurements, which could indicate the existence of a new neutrino. This new neutrino state would not couple with the weak interaction (a sterile neutrino) and its mass would be around $\SI{1}{eV/c^2}$. The \textsc{Stereo} experiment aims at testing the sterile neutrino hypothesis at the ILL reactor in Grenoble-France. The principle of the  \textsc{Stereo} experiment is based on 6 identical detector cells aligned between 9 and 11.5 m distance from the core of the ILL research reactor. The detector started taking data in November 2016, and the first results were published in 2018. The work carried out during the thesis initially consisted in characterizing the detector's energy response. During the first phase of data taking, hardware failures occurred leading to the optical decoupling of a cell and a gradual increase in light cross-talk between cells. These two aspects have compelled data analysis to develop a dedicated energy deposit reconstruction algorithm that corrects first-order light leaks using a matrix formalism. Significant work on the measurement of the parameters of this method was undertaken to ensure that the energy scale was well reproduced in the \textsc{Geant4} simulation. The estimation of systematic uncertainties on the energy scale was performed using cosmogenic background events. The second major aspect addressed during the thesis is the statistical analysis and generation of exclusion contours of the sterile neutrino hypothesis. The statistical inference was built using the Feldman and Cousins (1999) method by generating frequentist confidence intervals. A formalization in $\chi^2$ has been specially developed to conduct the oscillation analysis independently of any flux or shape prediction of the antineutrino spectra. Statistical and systematic errors were propagated using covariance matrices and $\chi^2$ laws were constructed by generating pseudo-experiments. All the work carried out during this doctoral thesis contributed to the publication of three papers presenting the results of the \textsc{Stereo} experiment.}															%% Résumé en anglais / abstract in english
+
+\label{layout}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Mise en page / Page layout      
+%%% NE RIEN MODIFIER / DO NOT MODIFY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\pagestyle{empty}
+
+%%% Logo de l'école doctorale. Le nom du fichier correspond au sigle de l'ED / Doctoral school logo. Filename correspond to doctoral school acronym
+%%% Les noms valides sont / Valid names are : 2MIB; AAIF; ABIES; BIOSIGNE; CBMS; EDMH; EDOM; EDPIF; EDSP; EOBE; INTERFACES; ITFA; PHENIICS; SDSV; SDV; SHS; SMEMAG; SSMMH; STIC
+\begin{textblock*}{61mm}(16mm,3mm)
+	\noindent\includegraphics[height=24mm]{media/PHENIICS.png}
+\end{textblock*}
+
+
+
+%%%Titre de la thèse en français / Thesis title in french
+\begin{center}
+\fcolorbox{bordeau}{white}{\parbox{0.95\textwidth}{
+{\bf Titre:} \PhDTitleFR 
+\medskip
+
+%%%Mots clés en français, séprarés par des ; / Keywords in french, separated by ;
+{\bf Mots clés:} \keywordsFR 
+\vspace{-2mm}
+
+%%% Résumé en français / abstract in french
+\begin{multicols}{2}
+{\bf Résumé:} 
+\abstractFR 
+
+\end{multicols}
+}}
+\end{center}
+
+\vspace*{0mm}
+
+%%%Titre de la thèse en anglais / Thesis title in english
+\begin{center}
+\fcolorbox{bordeau}{white}{\parbox{0.95\textwidth}{
+{\bf Title:} \PhDTitleEN 
+
+\medskip
+
+%%%Mots clés en anglais, séprarés par des ; / Keywords in english, separated by ;
+{\bf Keywords:}  \keywordsEN %%3 à 6 mots clés%%
+\vspace{-2mm}
+\begin{multicols}{2}
+	
+%%% Résumé en anglais / abstract in english
+{\bf Abstract:} 
+\abstractEN
+\end{multicols}
+}}
+\end{center}
+
+
+\begin{textblock*}{161mm}(10mm,270mm)
+\color{bordeau}
+{\bf\noindent Université Paris-Saclay	         }
+
+\noindent Espace Technologique / Immeuble Discovery 
+
+\noindent Route de l’Orme aux Merisiers RD 128 / 91190 Saint-Aubin, France 
+\end{textblock*}
+
+\begin{textblock*}{20mm}(182mm,255mm)
+\includegraphics[width=20mm]{media/UPSACLAY-petit}
+\end{textblock*}
+
+\end{document}
