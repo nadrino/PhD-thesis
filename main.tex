@@ -33,9 +33,31 @@
 
 %\pagedegarde
 
+{
+
+\null
+\thispagestyle{empty}
+\newpage
+
 %\cleardoublepage
-\clearpage
-\clearpage
+
+\clearpage % go to next page.
+\null
+\thispagestyle{empty}
+\mbox{}
+\vfill
+{
+\begin{flushright}
+\textit{à Floriane,}
+\end{flushright}
+}
+\vfill
+\mbox{}
+\clearpage % go to next page
+\null
+\thispagestyle{empty}
+
+}
 
 \pagenumbering{roman}
 \includefrom{Remerciements/}{include/remerciements}
@@ -84,7 +106,34 @@
 
 % \subfile{4eme.tex}
 
-\cleardoublepage
+%\cleardoublepage
+
+\clearpage
+\null
+\thispagestyle{empty}
+
+\clearpage
+\null
+\thispagestyle{empty}
+\mbox{}
+\vfill
+{
+\citationChap{
+But let us be silent...\\
+Words and thoughts are distractions.\\
+Feel this moment, for as long as it will last.\\
+Feel life as it is, but the crude matter stripped away.
+}{Kreia}{Star Wars: Knights of the Old Republic II}
+}
+\vfill
+\mbox{}
+\clearpage % go to next page
+\null
+\thispagestyle{empty}
+
+\clearpage
+\null
+\thispagestyle{empty}
 
 \includepdf[pages=-]{ED_covers/4eme.pdf}
 
