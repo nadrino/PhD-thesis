@@ -8,3 +8,7 @@ The doctoral thesis focuses on the physics of reactor neutrinos. The increasingl
 ## Compiling Notes
 
 The document has been automatically generated with Texpad.
+
+![The STEREO Collaboration in 2016](https://repository-images.githubusercontent.com/227992080/b2ac9300-531e-11ea-8430-97e36adf400c)
+
+
