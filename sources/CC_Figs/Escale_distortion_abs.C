@@ -1,0 +1,131 @@
+void Escale_distortion_abs()
+{
+//=========Macro generated from canvas: c1/c1
+//=========  (Tue Aug  6 18:16:16 2019) by ROOT version 6.13/02
+   TCanvas *c1 = new TCanvas("c1", "c1",0,23,800,600);
+   gStyle->SetOptFit(1);
+   gStyle->SetOptStat(0);
+   c1->SetHighLightColor(2);
+   c1->Range(0.4821429,-2.306677,7.625,13.07117);
+   c1->SetFillColor(0);
+   c1->SetBorderMode(0);
+   c1->SetBorderSize(2);
+   c1->SetGridx();
+   c1->SetGridy();
+   c1->SetTickx(1);
+   c1->SetTicky(1);
+   c1->SetLeftMargin(0.16);
+   c1->SetRightMargin(0.07);
+   c1->SetBottomMargin(0.15);
+   c1->SetFrameLineWidth(2);
+   c1->SetFrameBorderMode(0);
+   c1->SetFrameLineWidth(2);
+   c1->SetFrameBorderMode(0);
+   
+   TH1D *M_b__2 = new TH1D("M_b__2","",11,1.625,7.125);
+   M_b__2->SetBinContent(1,8.011364);
+   M_b__2->SetBinContent(2,9.373758);
+   M_b__2->SetBinContent(3,9.739303);
+   M_b__2->SetBinContent(4,9.392415);
+   M_b__2->SetBinContent(5,8.259464);
+   M_b__2->SetBinContent(6,6.896103);
+   M_b__2->SetBinContent(7,5.497554);
+   M_b__2->SetBinContent(8,4.191117);
+   M_b__2->SetBinContent(9,3.189588);
+   M_b__2->SetBinContent(10,2.292217);
+   M_b__2->SetBinContent(11,1.427991);
+   M_b__2->SetMinimum(0);
+   M_b__2->SetMaximum(11.68716);
+   M_b__2->SetEntries(22);
+   M_b__2->SetLineWidth(5);
+   M_b__2->SetMarkerSize(1.2);
+   M_b__2->GetXaxis()->SetTitle("Reconstructed Energy (MeV)");
+   M_b__2->GetXaxis()->SetLabelFont(42);
+   M_b__2->GetXaxis()->SetLabelOffset(0.015);
+   M_b__2->GetXaxis()->SetLabelSize(0.05);
+   M_b__2->GetXaxis()->SetTitleSize(0.06);
+   M_b__2->GetXaxis()->SetTitleOffset(1.05);
+   M_b__2->GetXaxis()->SetTitleFont(42);
+   M_b__2->GetYaxis()->SetTitle("Counts (/day/500 keV)");
+   M_b__2->GetYaxis()->SetLabelFont(42);
+   M_b__2->GetYaxis()->SetLabelOffset(0.015);
+   M_b__2->GetYaxis()->SetLabelSize(0.05);
+   M_b__2->GetYaxis()->SetTitleSize(0.06);
+   M_b__2->GetYaxis()->SetTitleOffset(1.2);
+   M_b__2->GetYaxis()->SetTitleFont(42);
+   M_b__2->GetZaxis()->SetLabelFont(42);
+   M_b__2->GetZaxis()->SetLabelSize(0.05);
+   M_b__2->GetZaxis()->SetTitleSize(0.06);
+   M_b__2->GetZaxis()->SetTitleFont(42);
+   M_b__2->Draw("");
+   
+   TH1D *M_b__3 = new TH1D("M_b__3","M_b",11,1.625,7.125);
+   M_b__3->SetBinContent(1,8.166055);
+   M_b__3->SetBinContent(2,9.505893);
+   M_b__3->SetBinContent(3,9.83366);
+   M_b__3->SetBinContent(4,9.431003);
+   M_b__3->SetBinContent(5,8.240986);
+   M_b__3->SetBinContent(6,6.840988);
+   M_b__3->SetBinContent(7,5.418829);
+   M_b__3->SetBinContent(8,4.10882);
+   M_b__3->SetBinContent(9,3.108871);
+   M_b__3->SetBinContent(10,2.201792);
+   M_b__3->SetBinContent(11,1.34316);
+   M_b__3->SetEntries(11);
+   M_b__3->SetDirectory(0);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#ff0000");
+   M_b__3->SetLineColor(ci);
+   M_b__3->SetLineStyle(2);
+   M_b__3->SetLineWidth(5);
+   M_b__3->SetMarkerSize(1.2);
+   M_b__3->GetXaxis()->SetLabelFont(42);
+   M_b__3->GetXaxis()->SetLabelOffset(0.015);
+   M_b__3->GetXaxis()->SetLabelSize(0.05);
+   M_b__3->GetXaxis()->SetTitleSize(0.06);
+   M_b__3->GetXaxis()->SetTitleOffset(1.05);
+   M_b__3->GetXaxis()->SetTitleFont(42);
+   M_b__3->GetYaxis()->SetLabelFont(42);
+   M_b__3->GetYaxis()->SetLabelOffset(0.015);
+   M_b__3->GetYaxis()->SetLabelSize(0.05);
+   M_b__3->GetYaxis()->SetTitleSize(0.06);
+   M_b__3->GetYaxis()->SetTitleOffset(1.2);
+   M_b__3->GetYaxis()->SetTitleFont(42);
+   M_b__3->GetZaxis()->SetLabelFont(42);
+   M_b__3->GetZaxis()->SetLabelSize(0.05);
+   M_b__3->GetZaxis()->SetTitleSize(0.06);
+   M_b__3->GetZaxis()->SetTitleFont(42);
+   M_b__3->Draw("SAME");
+   
+   TLegend *leg = new TLegend(0.55,0.65,0.9,0.85,NULL,"brNDC");
+   leg->SetBorderSize(1);
+   leg->SetLineColor(1);
+   leg->SetLineStyle(1);
+   leg->SetLineWidth(2);
+   leg->SetFillColor(0);
+   leg->SetFillStyle(1001);
+   TLegendEntry *entry=leg->AddEntry("M_b","#alpha^{EC} = 1 %","L");
+   entry->SetLineColor(1);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(5);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("M_b","No Distortion","L");
+
+   ci = TColor::GetColor("#ff0000");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(2);
+   entry->SetLineWidth(5);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   leg->Draw();
+   c1->Modified();
+   c1->cd();
+   c1->SetSelected(c1);
+}

@@ -1,0 +1,108 @@
+void profile_dm2_16.405898_PDF_dm2-bin-90_sin2theta-bin-90()
+{
+//=========Macro generated from canvas: c2/c2
+//=========  (Sat Jun 22 15:00:47 2019) by ROOT version 6.13/02
+   TCanvas *c2 = new TCanvas("c2", "c2",20,43,800,600);
+   gStyle->SetOptFit(1);
+   gStyle->SetOptStat(0);
+   c2->SetHighLightColor(2);
+   c2->Range(-6.818035,-0.2072369,35.79469,1.174342);
+   c2->SetFillColor(0);
+   c2->SetBorderMode(0);
+   c2->SetBorderSize(2);
+   c2->SetGridx();
+   c2->SetGridy();
+   c2->SetTickx(1);
+   c2->SetTicky(1);
+   c2->SetLeftMargin(0.16);
+   c2->SetRightMargin(0.07);
+   c2->SetBottomMargin(0.15);
+   c2->SetFrameLineWidth(2);
+   c2->SetFrameBorderMode(0);
+   c2->SetFrameLineWidth(2);
+   c2->SetFrameBorderMode(0);
+   
+   TH1D *profile_dm2__2 = new TH1D("profile_dm2__2","",100,0,32.8118);
+   profile_dm2__2->SetBinContent(1,0.09803922);
+   profile_dm2__2->SetBinContent(2,0.01960784);
+   profile_dm2__2->SetBinContent(3,0.5490196);
+   profile_dm2__2->SetBinContent(4,0.8823529);
+   profile_dm2__2->SetBinContent(5,0.8039216);
+   profile_dm2__2->SetBinContent(6,1);
+   profile_dm2__2->SetBinContent(7,0.8823529);
+   profile_dm2__2->SetBinContent(8,0.8039216);
+   profile_dm2__2->SetBinContent(9,0.7254902);
+   profile_dm2__2->SetBinContent(10,0.3529412);
+   profile_dm2__2->SetBinContent(11,0.9411765);
+   profile_dm2__2->SetBinContent(12,0.254902);
+   profile_dm2__2->SetBinContent(13,0.2352941);
+   profile_dm2__2->SetBinContent(14,0.4117647);
+   profile_dm2__2->SetBinContent(15,0.4705882);
+   profile_dm2__2->SetBinContent(16,0.4117647);
+   profile_dm2__2->SetBinContent(17,0.3137255);
+   profile_dm2__2->SetBinContent(18,0.1960784);
+   profile_dm2__2->SetBinContent(20,0.1372549);
+   profile_dm2__2->SetBinContent(21,0.1568627);
+   profile_dm2__2->SetBinContent(22,0.05882353);
+   profile_dm2__2->SetBinContent(24,0.01960784);
+   profile_dm2__2->SetBinContent(26,0.01960784);
+   profile_dm2__2->SetBinContent(29,0.05882353);
+   profile_dm2__2->SetBinError(1,0.04384447);
+   profile_dm2__2->SetBinError(2,0.01960784);
+   profile_dm2__2->SetBinError(3,0.103755);
+   profile_dm2__2->SetBinError(4,0.1315334);
+   profile_dm2__2->SetBinError(5,0.1255515);
+   profile_dm2__2->SetBinError(6,0.140028);
+   profile_dm2__2->SetBinError(7,0.1315334);
+   profile_dm2__2->SetBinError(8,0.1255515);
+   profile_dm2__2->SetBinError(9,0.1192699);
+   profile_dm2__2->SetBinError(10,0.08318903);
+   profile_dm2__2->SetBinError(11,0.1358471);
+   profile_dm2__2->SetBinError(12,0.07069708);
+   profile_dm2__2->SetBinError(13,0.06792356);
+   profile_dm2__2->SetBinError(14,0.08985443);
+   profile_dm2__2->SetBinError(15,0.09605842);
+   profile_dm2__2->SetBinError(16,0.08985443);
+   profile_dm2__2->SetBinError(17,0.07843137);
+   profile_dm2__2->SetBinError(18,0.06200544);
+   profile_dm2__2->SetBinError(20,0.05187748);
+   profile_dm2__2->SetBinError(21,0.05545936);
+   profile_dm2__2->SetBinError(22,0.03396178);
+   profile_dm2__2->SetBinError(24,0.01960784);
+   profile_dm2__2->SetBinError(26,0.01960784);
+   profile_dm2__2->SetBinError(29,0.03396178);
+   profile_dm2__2->SetEntries(500);
+   profile_dm2__2->SetLineWidth(3);
+   profile_dm2__2->SetMarkerSize(1.2);
+   profile_dm2__2->GetXaxis()->SetTitle("#Deltam^{2}_{14} for #chi^{2}_{best-fit} (eV^{2})");
+   profile_dm2__2->GetXaxis()->SetLabelFont(42);
+   profile_dm2__2->GetXaxis()->SetLabelOffset(0.015);
+   profile_dm2__2->GetXaxis()->SetLabelSize(0.05);
+   profile_dm2__2->GetXaxis()->SetTitleSize(0.06);
+   profile_dm2__2->GetXaxis()->SetTitleOffset(1.05);
+   profile_dm2__2->GetXaxis()->SetTitleFont(42);
+   profile_dm2__2->GetYaxis()->SetTitle("Counts (a.u.)");
+   profile_dm2__2->GetYaxis()->SetLabelFont(42);
+   profile_dm2__2->GetYaxis()->SetLabelOffset(0.015);
+   profile_dm2__2->GetYaxis()->SetLabelSize(0.05);
+   profile_dm2__2->GetYaxis()->SetTitleSize(0.06);
+   profile_dm2__2->GetYaxis()->SetTitleOffset(1.2);
+   profile_dm2__2->GetYaxis()->SetTitleFont(42);
+   profile_dm2__2->GetZaxis()->SetLabelFont(42);
+   profile_dm2__2->GetZaxis()->SetLabelSize(0.05);
+   profile_dm2__2->GetZaxis()->SetTitleSize(0.06);
+   profile_dm2__2->GetZaxis()->SetTitleFont(42);
+   profile_dm2__2->Draw("HIST");
+   TLine *line = new TLine(16.4059,0,16.4059,1.05);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#0000ff");
+   line->SetLineColor(ci);
+   line->SetLineStyle(2);
+   line->SetLineWidth(4);
+   line->Draw();
+   c2->Modified();
+   c2->cd();
+   c2->SetSelected(c2);
+}
